@@ -18,7 +18,7 @@ mkdir -p ~/.local/share/Anki2
 Note that they must be owned by your regular unprivileged user. Then:
 
 ```bash
-docker run --rm -it \
+docker run --rm -d \
         -v /tmp/.X11-unix:/tmp/.X11-unix \
         -e DISPLAY=$DISPLAY \
         --user $(id -u):$(id -g) \
